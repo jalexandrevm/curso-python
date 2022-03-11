@@ -6,10 +6,11 @@ Nesse módulo apredemos a utilizar a framework Django. Ela é considerada uma fr
 - `urls.py`: onde mapeamos uma *rota* para uma função (*view*)
 - `views.py`: funções que são chamadas quando determinada *url* é acessada. Elas recebem pelo menos um objeto `request` (tipo: `HttpRequest`) como parâmetro e devem retornar um `HttpResponse`.
 - `templates`: arquivos HTML com funcionalidades especiais (graças ao Django Tempalte). Por exemplo: renderizar diversos elementos HTML de acordo com uma lista de objetos.
-- `models.py`: onde ficam os *modelos* da nossa aplicação (ou *entidades*). Quando heram de `django.db.models.Model`, são mapeadas para tabelas e atributos em um banco de dados.
+- `models.py`: onde ficam os *modelos* da nossa aplicação (ou *entidades*). Quando herdam de `django.db.models.Model`, são mapeadas para tabelas e atributos em um banco de dados.
 - `shell`: um modo de interagir com nossa aplicação via shell. Geralmente utilizada para rascunhos, escrever consultas e testar coisas, mas nada impede que seja utilizada de outras formas.
 - `admin`: painel de administração onde podemos interagir com os nossos modelos.
-- `migrations`: todas as alterações nos nossos modelos que devem refletir mudanças em um banco de dados são feitas em duas etapas. Primeiro, é gerado o arquivo de migração que representa o que vai ser alterado. Segundo, esse arquivo é executado e as mudanças são realizadas no banco de dados.
+- `migrations`: todas as alterações nos nossos modelos que devem refletir mudanças em um banco de dados são feitas em duas etapas. Primeiro, é gerado o arquivo de migração que representa o que vai ser alterado.
+- `migrate`: Segundo, esse arquivo é executado e as mudanças são realizadas no banco de dados.
 
 ## Principais comandos utilizados
 
